@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useState } from 'react'
 
 function IncomeForm({onSetIncome }) {
@@ -12,11 +12,10 @@ function IncomeForm({onSetIncome }) {
     setIncomeInput(""); 
   }
 
-  console.log(incomeInput);
   
   return (
     <>
-                         <form className='bg-slate-200 rounded-md mt-4 w-full flex flex-col items-start p-6 px-10 justify-center'>
+    <form className='bg-slate-200 rounded-md mt-4 w-full flex flex-col items-start p-6 px-10 justify-center'>
       <label htmlFor="income">Enter Income <span className='text-red-500'>*</span></label>
 
       <input

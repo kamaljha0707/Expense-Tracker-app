@@ -23,7 +23,7 @@ function App() {
         localStorage.setItem("expenseData", JSON.stringify(newData));
         return newData;
       });
-      setEditingExpense(null); // Clear the editing state after updating
+      setEditingExpense(null); 
     } else {
       setExpenseData((prevData) => {
         const newData = [...prevData, newExpense];
